@@ -1,0 +1,23 @@
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

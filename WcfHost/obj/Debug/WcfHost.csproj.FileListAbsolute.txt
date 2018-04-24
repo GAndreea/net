@@ -1,0 +1,16 @@
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfHost.exe.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfHost.exe
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfHost.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfService2.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\ClassLibrary1.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\EntityFramework.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfService2.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\WcfService2.dll.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\ClassLibrary1.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\ClassLibrary1.dll.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\EntityFramework.xml
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.csproj.CopyComplete
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.exe
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.pdb

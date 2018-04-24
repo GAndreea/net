@@ -1,0 +1,13 @@
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\WcfService2.dll.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\WcfService2.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\WcfService2.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\ClassLibrary1.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\EntityFramework.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\ClassLibrary1.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\ClassLibrary1.dll.config
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\bin\EntityFramework.xml
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\obj\Debug\WcfService2.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\obj\Debug\WcfService2.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\obj\Debug\WcfService2.csproj.CopyComplete
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\obj\Debug\WcfService2.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfService2\obj\Debug\WcfService2.pdb

@@ -1,0 +1,10 @@
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\ClassLibrary1.dll.config
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\EntityFramework.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\EntityFramework.xml
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Release\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\Users\ANDREEA\Source\repos\ClassLibrary1\ClassLibrary1\obj\Release\ClassLibrary1.pdb
