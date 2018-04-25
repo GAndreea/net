@@ -1,5 +1,4 @@
-﻿using ClassLibrary1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using W
+using WcfService2;
 namespace WindowsFormsApp1
 {
     public partial class RestituieCarte : Form
@@ -30,9 +29,10 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Service1Client service1Client = new Service1Client();
             var email_user = emailBox.Text;
-            var id_user = ClassLibrary1.Program.verifica_cititor(email_user);
-            
+            var id_user = service1Client.S_verifica_cititor(email_user);
+
             if (id_user == -1)
             {
                 restituieGrup.Visible = false;
@@ -43,8 +43,9 @@ namespace WindowsFormsApp1
             }
             else
             {
-                var imprumuturi1 = ClassLibrary1.Program.get_imprumuturi(id_user);
-                if (imprumuturi1.Count == 0)
+                var imprumuturi1 = service1Client.S_get_imprumuturi(id_user);
+
+                if (imprumuturi1.Length ==0)
                 {
                     restituieGrup.Visible = false;
                     imprumuturi.Visible = false;
@@ -73,9 +74,9 @@ namespace WindowsFormsApp1
                         string[] arr = new string[6];
                         ListViewItem itm;
                         arr[0] = c.ImprumutId.ToString();
-                        var c1 = ClassLibrary1.Program.get_carte((int)c.CarteId);
+                        var c1 = service1Client.S_get_carte((int)c.CarteId);
                         arr[1] = c1.Titlu;
-                        var a = ClassLibrary1.Program.get_autor((int)c1.AutorId);
+                        var a = service1Client.S_get_autor((int)c1.AutorId);
                         arr[2] = a.Nume + " " + a.Prenume;
                         arr[3] = (c.DataImprumut).ToString();
                         arr[4] = (c.DataScadenta).ToString();
@@ -95,16 +96,18 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Service1Client service1Client = new Service1Client();
+
             var imprumut_id = Int32.Parse(idImprumut.Text);
             var review_text = review.Text;
             rezultat.Visible = true;
-            ClassLibrary1.Program.restituie_carte(imprumut_id);
-            var new_review = new REVIEW()
+            service1Client.S_restituie_carte(imprumut_id);
+            var new_review = new REVIEWDTO()
             {
                 ImprumutId = imprumut_id,
                 Text = review_text
             };
-            ClassLibrary1.Program.adauga_review(new_review);
+            service1Client.S_adauga_review(new_review);
             rezultat.Text = "Restituit";
         }
     }

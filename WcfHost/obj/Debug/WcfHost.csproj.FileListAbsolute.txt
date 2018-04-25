@@ -14,3 +14,7 @@ C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.csproj.CopyComplete
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.exe
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\obj\Debug\WcfHost.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\AutoMapper.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\AutoMapper.xml
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WcfHost\bin\Debug\EntityFramework.SqlServer.xml

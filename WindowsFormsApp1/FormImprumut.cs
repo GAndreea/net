@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary1;
-
+using WcfService2;
 namespace WindowsFormsApp1
 {
     public partial class FormImprumut : Form
@@ -29,17 +28,27 @@ namespace WindowsFormsApp1
             var nume_user = nume.Text;
             var prenume_user = prenume.Text;
             var adresa_user = adresa.Text;
-            var id_user = ClassLibrary1.Program.verifica_cititor(email_user);
+            Service1Client service1Client = new Service1Client();
+
+            var id_user = service1Client.S_verifica_cititor(email_user);
             if (id_user==-1)
             {
-                ClassLibrary1.Program.adauga_cititor(nume_user, prenume_user, adresa_user, email_user);
+                CITITORDTO c = new CITITORDTO()
+                {
+                    Nume = nume_user,
+                    Prenume = prenume_user,
+                    Adresa = adresa_user,
+                    Email = email_user,
+                    Stare = BitConverter.GetBytes(0)
+                };
+                service1Client.S_adauga_cititor(c);
                 rezultat.Text = "User nou creat";
                 rezultat.Visible = true;
                 pas3.Visible = true;
             }
             else
             {
-                int st = ClassLibrary1.Program.get_stare(id_user);
+                int st = service1Client.S_get_stare(id_user);
                 rezultat.Text = "Stare: " + st.ToString();
                 rezultat.Visible = true;
                 pas3.Visible = true;
@@ -49,7 +58,9 @@ namespace WindowsFormsApp1
 
         private void pas3_Click(object sender, EventArgs e)
         {
-            var cId = ClassLibrary1.Program.verifica_cititor(email.Text);
+            Service1Client service1Client = new Service1Client();
+
+            var cId = service1Client.S_verifica_cititor(email.Text);
             AfisareCarti f3 = new AfisareCarti(cId);
             f3.Show();
         }

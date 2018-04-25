@@ -11,19 +11,29 @@
 namespace WcfService2
 {
     using System.Runtime.Serialization;
-    
+
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name = "CompositeType", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject
+    [System.Runtime.Serialization.DataContractAttribute(Name = "CARTEDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class CARTEDTO : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private bool BoolValueField;
+        private WcfService2.AUTORDTO AUTORField;
 
-        private string StringValueField;
+        private System.Nullable<int> AutorIdField;
+
+        private int CarteIdField;
+
+        private WcfService2.GENDTO GENField;
+
+        private System.Nullable<int> GenIdField;
+
+        private WcfService2.IMPRUMUTDTO[] IMPRUMUTField;
+
+        private string TitluField;
 
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
@@ -38,28 +48,603 @@ namespace WcfService2
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue
+        public WcfService2.AUTORDTO AUTOR
         {
             get
             {
-                return this.BoolValueField;
+                return this.AUTORField;
             }
             set
             {
-                this.BoolValueField = value;
+                this.AUTORField = value;
             }
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue
+        public System.Nullable<int> AutorId
         {
             get
             {
-                return this.StringValueField;
+                return this.AutorIdField;
             }
             set
             {
-                this.StringValueField = value;
+                this.AutorIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CarteId
+        {
+            get
+            {
+                return this.CarteIdField;
+            }
+            set
+            {
+                this.CarteIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.GENDTO GEN
+        {
+            get
+            {
+                return this.GENField;
+            }
+            set
+            {
+                this.GENField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> GenId
+        {
+            get
+            {
+                return this.GenIdField;
+            }
+            set
+            {
+                this.GenIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.IMPRUMUTDTO[] IMPRUMUT
+        {
+            get
+            {
+                return this.IMPRUMUTField;
+            }
+            set
+            {
+                this.IMPRUMUTField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Titlu
+        {
+            get
+            {
+                return this.TitluField;
+            }
+            set
+            {
+                this.TitluField = value;
+            }
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "AUTORDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class AUTORDTO : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private int AutorIdField;
+
+        private WcfService2.CARTEDTO[] CARTEField;
+
+        private string NumeField;
+
+        private string PrenumeField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AutorId
+        {
+            get
+            {
+                return this.AutorIdField;
+            }
+            set
+            {
+                this.AutorIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.CARTEDTO[] CARTE
+        {
+            get
+            {
+                return this.CARTEField;
+            }
+            set
+            {
+                this.CARTEField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nume
+        {
+            get
+            {
+                return this.NumeField;
+            }
+            set
+            {
+                this.NumeField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Prenume
+        {
+            get
+            {
+                return this.PrenumeField;
+            }
+            set
+            {
+                this.PrenumeField = value;
+            }
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "GENDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class GENDTO : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private WcfService2.CARTEDTO[] CARTEField;
+
+        private string DescriereField;
+
+        private int GenIdField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.CARTEDTO[] CARTE
+        {
+            get
+            {
+                return this.CARTEField;
+            }
+            set
+            {
+                this.CARTEField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descriere
+        {
+            get
+            {
+                return this.DescriereField;
+            }
+            set
+            {
+                this.DescriereField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int GenId
+        {
+            get
+            {
+                return this.GenIdField;
+            }
+            set
+            {
+                this.GenIdField = value;
+            }
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "IMPRUMUTDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class IMPRUMUTDTO : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private WcfService2.CARTEDTO CARTEField;
+
+        private WcfService2.CITITORDTO CITITORField;
+
+        private System.Nullable<int> CarteIdField;
+
+        private System.Nullable<int> CititorIdField;
+
+        private System.Nullable<System.DateTime> DataImprumutField;
+
+        private System.Nullable<System.DateTime> DataRestituireField;
+
+        private System.Nullable<System.DateTime> DataScadentaField;
+
+        private int ImprumutIdField;
+
+        private WcfService2.REVIEWDTO[] REVIEWField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.CARTEDTO CARTE
+        {
+            get
+            {
+                return this.CARTEField;
+            }
+            set
+            {
+                this.CARTEField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.CITITORDTO CITITOR
+        {
+            get
+            {
+                return this.CITITORField;
+            }
+            set
+            {
+                this.CITITORField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> CarteId
+        {
+            get
+            {
+                return this.CarteIdField;
+            }
+            set
+            {
+                this.CarteIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> CititorId
+        {
+            get
+            {
+                return this.CititorIdField;
+            }
+            set
+            {
+                this.CititorIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataImprumut
+        {
+            get
+            {
+                return this.DataImprumutField;
+            }
+            set
+            {
+                this.DataImprumutField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataRestituire
+        {
+            get
+            {
+                return this.DataRestituireField;
+            }
+            set
+            {
+                this.DataRestituireField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> DataScadenta
+        {
+            get
+            {
+                return this.DataScadentaField;
+            }
+            set
+            {
+                this.DataScadentaField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ImprumutId
+        {
+            get
+            {
+                return this.ImprumutIdField;
+            }
+            set
+            {
+                this.ImprumutIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.REVIEWDTO[] REVIEW
+        {
+            get
+            {
+                return this.REVIEWField;
+            }
+            set
+            {
+                this.REVIEWField = value;
+            }
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "CITITORDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class CITITORDTO : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private string AdresaField;
+
+        private int CititorIdField;
+
+        private string EmailField;
+
+        private WcfService2.IMPRUMUTDTO[] IMPRUMUTField;
+
+        private string NumeField;
+
+        private string PrenumeField;
+
+        private byte[] StareField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Adresa
+        {
+            get
+            {
+                return this.AdresaField;
+            }
+            set
+            {
+                this.AdresaField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CititorId
+        {
+            get
+            {
+                return this.CititorIdField;
+            }
+            set
+            {
+                this.CititorIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email
+        {
+            get
+            {
+                return this.EmailField;
+            }
+            set
+            {
+                this.EmailField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.IMPRUMUTDTO[] IMPRUMUT
+        {
+            get
+            {
+                return this.IMPRUMUTField;
+            }
+            set
+            {
+                this.IMPRUMUTField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nume
+        {
+            get
+            {
+                return this.NumeField;
+            }
+            set
+            {
+                this.NumeField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Prenume
+        {
+            get
+            {
+                return this.PrenumeField;
+            }
+            set
+            {
+                this.PrenumeField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Stare
+        {
+            get
+            {
+                return this.StareField;
+            }
+            set
+            {
+                this.StareField = value;
+            }
+        }
+    }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "REVIEWDTO", Namespace = "http://schemas.datacontract.org/2004/07/WcfService2")]
+    public partial class REVIEWDTO : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private WcfService2.IMPRUMUTDTO IMPRUMUTField;
+
+        private System.Nullable<int> ImprumutIdField;
+
+        private int ReviewIdField;
+
+        private string TextField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WcfService2.IMPRUMUTDTO IMPRUMUT
+        {
+            get
+            {
+                return this.IMPRUMUTField;
+            }
+            set
+            {
+                this.IMPRUMUTField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> ImprumutId
+        {
+            get
+            {
+                return this.ImprumutIdField;
+            }
+            set
+            {
+                this.ImprumutIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ReviewId
+        {
+            get
+            {
+                return this.ReviewIdField;
+            }
+            set
+            {
+                this.ReviewIdField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Text
+        {
+            get
+            {
+                return this.TextField;
+            }
+            set
+            {
+                this.TextField = value;
             }
         }
     }
@@ -68,6 +653,72 @@ namespace ClassLibrary1
 {
     using System.Runtime.Serialization;
 
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name = "GEN", Namespace = "http://schemas.datacontract.org/2004/07/ClassLibrary1")]
+    public partial class GEN : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+
+        private ClassLibrary1.CARTE[] CARTEField;
+
+        private string DescriereField;
+
+        private int GenIdField;
+
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClassLibrary1.CARTE[] CARTE
+        {
+            get
+            {
+                return this.CARTEField;
+            }
+            set
+            {
+                this.CARTEField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descriere
+        {
+            get
+            {
+                return this.DescriereField;
+            }
+            set
+            {
+                this.DescriereField = value;
+            }
+        }
+
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int GenId
+        {
+            get
+            {
+                return this.GenIdField;
+            }
+            set
+            {
+                this.GenIdField = value;
+            }
+        }
+    }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
@@ -272,72 +923,6 @@ namespace ClassLibrary1
             set
             {
                 this.PrenumeField = value;
-            }
-        }
-    }
-
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name = "GEN", Namespace = "http://schemas.datacontract.org/2004/07/ClassLibrary1")]
-    public partial class GEN : object, System.Runtime.Serialization.IExtensibleDataObject
-    {
-
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-
-        private ClassLibrary1.CARTE[] CARTEField;
-
-        private string DescriereField;
-
-        private int GenIdField;
-
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
-        {
-            get
-            {
-                return this.extensionDataField;
-            }
-            set
-            {
-                this.extensionDataField = value;
-            }
-        }
-
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClassLibrary1.CARTE[] CARTE
-        {
-            get
-            {
-                return this.CARTEField;
-            }
-            set
-            {
-                this.CARTEField = value;
-            }
-        }
-
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Descriere
-        {
-            get
-            {
-                return this.DescriereField;
-            }
-            set
-            {
-                this.DescriereField = value;
-            }
-        }
-
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int GenId
-        {
-            get
-            {
-                return this.GenIdField;
-            }
-            set
-            {
-                this.GenIdField = value;
             }
         }
     }
@@ -718,23 +1303,17 @@ public interface IService1
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/GetData", ReplyAction = "http://tempuri.org/IService1/GetDataResponse")]
     System.Threading.Tasks.Task<string> GetDataAsync(int value);
 
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction = "http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-    WcfService2.CompositeType GetDataUsingDataContract(WcfService2.CompositeType composite);
-
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction = "http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-    System.Threading.Tasks.Task<WcfService2.CompositeType> GetDataUsingDataContractAsync(WcfService2.CompositeType composite);
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_listare_carti", ReplyAction = "http://tempuri.org/IService1/S_listare_cartiResponse")]
+    WcfService2.CARTEDTO[] S_listare_carti(int genId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_listare_carti", ReplyAction = "http://tempuri.org/IService1/S_listare_cartiResponse")]
-    ClassLibrary1.CARTE[] S_listare_carti(int genId);
-
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_listare_carti", ReplyAction = "http://tempuri.org/IService1/S_listare_cartiResponse")]
-    System.Threading.Tasks.Task<ClassLibrary1.CARTE[]> S_listare_cartiAsync(int genId);
+    System.Threading.Tasks.Task<WcfService2.CARTEDTO[]> S_listare_cartiAsync(int genId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_achizitie_carte", ReplyAction = "http://tempuri.org/IService1/S_achizitie_carteResponse")]
-    void S_achizitie_carte(ClassLibrary1.CARTE c, int nrExemplare);
+    void S_achizitie_carte(WcfService2.CARTEDTO c, int nrExemplare);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_achizitie_carte", ReplyAction = "http://tempuri.org/IService1/S_achizitie_carteResponse")]
-    System.Threading.Tasks.Task S_achizitie_carteAsync(ClassLibrary1.CARTE c, int nrExemplare);
+    System.Threading.Tasks.Task S_achizitie_carteAsync(WcfService2.CARTEDTO c, int nrExemplare);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_genId", ReplyAction = "http://tempuri.org/IService1/S_get_genIdResponse")]
     int S_get_genId(string gen);
@@ -743,10 +1322,10 @@ public interface IService1
     System.Threading.Tasks.Task<int> S_get_genIdAsync(string gen);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_autor", ReplyAction = "http://tempuri.org/IService1/S_get_autorResponse")]
-    ClassLibrary1.AUTOR S_get_autor(int AutorId);
+    WcfService2.AUTORDTO S_get_autor(int AutorId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_autor", ReplyAction = "http://tempuri.org/IService1/S_get_autorResponse")]
-    System.Threading.Tasks.Task<ClassLibrary1.AUTOR> S_get_autorAsync(int AutorId);
+    System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_get_autorAsync(int AutorId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_verifica_cititor", ReplyAction = "http://tempuri.org/IService1/S_verifica_cititorResponse")]
     int S_verifica_cititor(string email);
@@ -761,10 +1340,34 @@ public interface IService1
     System.Threading.Tasks.Task<int> S_get_stareAsync(int cititorId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_cititor", ReplyAction = "http://tempuri.org/IService1/S_adauga_cititorResponse")]
-    void S_adauga_cititor(ClassLibrary1.CITITOR c);
+    void S_adauga_cititor(WcfService2.CITITORDTO c);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_cititor", ReplyAction = "http://tempuri.org/IService1/S_adauga_cititorResponse")]
-    System.Threading.Tasks.Task S_adauga_cititorAsync(ClassLibrary1.CITITOR c);
+    System.Threading.Tasks.Task S_adauga_cititorAsync(WcfService2.CITITORDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_review", ReplyAction = "http://tempuri.org/IService1/S_adauga_reviewResponse")]
+    void S_adauga_review(WcfService2.REVIEWDTO r);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_review", ReplyAction = "http://tempuri.org/IService1/S_adauga_reviewResponse")]
+    System.Threading.Tasks.Task S_adauga_reviewAsync(WcfService2.REVIEWDTO r);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_autor", ReplyAction = "http://tempuri.org/IService1/S_adauga_autorResponse")]
+    void S_adauga_autor(WcfService2.AUTORDTO a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_autor", ReplyAction = "http://tempuri.org/IService1/S_adauga_autorResponse")]
+    System.Threading.Tasks.Task S_adauga_autorAsync(WcfService2.AUTORDTO a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_carte", ReplyAction = "http://tempuri.org/IService1/S_adauga_carteResponse")]
+    void S_adauga_carte(WcfService2.CARTEDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_carte", ReplyAction = "http://tempuri.org/IService1/S_adauga_carteResponse")]
+    System.Threading.Tasks.Task S_adauga_carteAsync(WcfService2.CARTEDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_aduga_gen", ReplyAction = "http://tempuri.org/IService1/S_aduga_genResponse")]
+    void S_aduga_gen(WcfService2.GENDTO g);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_aduga_gen", ReplyAction = "http://tempuri.org/IService1/S_aduga_genResponse")]
+    System.Threading.Tasks.Task S_aduga_genAsync(WcfService2.GENDTO g);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_imprumuta_carte", ReplyAction = "http://tempuri.org/IService1/S_imprumuta_carteResponse")]
     void S_imprumuta_carte(int carteId, int cititorId);
@@ -778,11 +1381,17 @@ public interface IService1
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_restituie_carte", ReplyAction = "http://tempuri.org/IService1/S_restituie_carteResponse")]
     System.Threading.Tasks.Task S_restituie_carteAsync(int imprumutId);
 
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_review", ReplyAction = "http://tempuri.org/IService1/S_adauga_reviewResponse")]
-    void S_adauga_review(ClassLibrary1.REVIEW r);
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_autor_by_name", ReplyAction = "http://tempuri.org/IService1/S_get_autor_by_nameResponse")]
+    WcfService2.AUTORDTO S_get_autor_by_name(string name);
 
-    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_adauga_review", ReplyAction = "http://tempuri.org/IService1/S_adauga_reviewResponse")]
-    System.Threading.Tasks.Task S_adauga_reviewAsync(ClassLibrary1.REVIEW r);
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_autor_by_name", ReplyAction = "http://tempuri.org/IService1/S_get_autor_by_nameResponse")]
+    System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_get_autor_by_nameAsync(string name);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_gen_by_name", ReplyAction = "http://tempuri.org/IService1/S_get_gen_by_nameResponse")]
+    WcfService2.GENDTO S_get_gen_by_name(string name);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_gen_by_name", ReplyAction = "http://tempuri.org/IService1/S_get_gen_by_nameResponse")]
+    System.Threading.Tasks.Task<WcfService2.GENDTO> S_get_gen_by_nameAsync(string name);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_verifica_carte", ReplyAction = "http://tempuri.org/IService1/S_verifica_carteResponse")]
     int S_verifica_carte(string nume_autor, string prenume_autor, string titlu_carte);
@@ -797,22 +1406,94 @@ public interface IService1
     System.Threading.Tasks.Task<System.DateTime> S_verifica_dataAsync(string nume_autor, string prenume_autor, string titlu_carte);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_imprumuturi", ReplyAction = "http://tempuri.org/IService1/S_get_imprumuturiResponse")]
-    ClassLibrary1.IMPRUMUT[] S_get_imprumuturi(int cititorId);
+    WcfService2.IMPRUMUTDTO[] S_get_imprumuturi(int cititorId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_imprumuturi", ReplyAction = "http://tempuri.org/IService1/S_get_imprumuturiResponse")]
-    System.Threading.Tasks.Task<ClassLibrary1.IMPRUMUT[]> S_get_imprumuturiAsync(int cititorId);
+    System.Threading.Tasks.Task<WcfService2.IMPRUMUTDTO[]> S_get_imprumuturiAsync(int cititorId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_carte", ReplyAction = "http://tempuri.org/IService1/S_get_carteResponse")]
-    ClassLibrary1.CARTE S_get_carte(int CarteId);
+    WcfService2.CARTEDTO S_get_carte(int CarteId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_carte", ReplyAction = "http://tempuri.org/IService1/S_get_carteResponse")]
-    System.Threading.Tasks.Task<ClassLibrary1.CARTE> S_get_carteAsync(int CarteId);
+    System.Threading.Tasks.Task<WcfService2.CARTEDTO> S_get_carteAsync(int CarteId);
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_nrCititori", ReplyAction = "http://tempuri.org/IService1/S_get_nrCititoriResponse")]
     int S_get_nrCititori();
 
     [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_get_nrCititori", ReplyAction = "http://tempuri.org/IService1/S_get_nrCititoriResponse")]
     System.Threading.Tasks.Task<int> S_get_nrCititoriAsync();
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_gen_dto", ReplyAction = "http://tempuri.org/IService1/S_gen_dtoResponse")]
+    WcfService2.GENDTO S_gen_dto(ClassLibrary1.GEN g);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_gen_dto", ReplyAction = "http://tempuri.org/IService1/S_gen_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.GENDTO> S_gen_dtoAsync(ClassLibrary1.GEN g);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_carte_dto", ReplyAction = "http://tempuri.org/IService1/S_carte_dtoResponse")]
+    WcfService2.CARTEDTO S_carte_dto(ClassLibrary1.CARTE c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_carte_dto", ReplyAction = "http://tempuri.org/IService1/S_carte_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.CARTEDTO> S_carte_dtoAsync(ClassLibrary1.CARTE c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_autor_dto", ReplyAction = "http://tempuri.org/IService1/S_autor_dtoResponse")]
+    WcfService2.AUTORDTO S_autor_dto(ClassLibrary1.AUTOR a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_autor_dto", ReplyAction = "http://tempuri.org/IService1/S_autor_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_autor_dtoAsync(ClassLibrary1.AUTOR a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_cititor_dto", ReplyAction = "http://tempuri.org/IService1/S_cititor_dtoResponse")]
+    WcfService2.CITITORDTO S_cititor_dto(ClassLibrary1.CITITOR c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_cititor_dto", ReplyAction = "http://tempuri.org/IService1/S_cititor_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.CITITORDTO> S_cititor_dtoAsync(ClassLibrary1.CITITOR c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_imprumut_dto", ReplyAction = "http://tempuri.org/IService1/S_imprumut_dtoResponse")]
+    WcfService2.IMPRUMUTDTO S_imprumut_dto(ClassLibrary1.IMPRUMUT i);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_imprumut_dto", ReplyAction = "http://tempuri.org/IService1/S_imprumut_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.IMPRUMUTDTO> S_imprumut_dtoAsync(ClassLibrary1.IMPRUMUT i);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_review_dto", ReplyAction = "http://tempuri.org/IService1/S_review_dtoResponse")]
+    WcfService2.REVIEWDTO S_review_dto(ClassLibrary1.REVIEW r);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_review_dto", ReplyAction = "http://tempuri.org/IService1/S_review_dtoResponse")]
+    System.Threading.Tasks.Task<WcfService2.REVIEWDTO> S_review_dtoAsync(ClassLibrary1.REVIEW r);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_autor", ReplyAction = "http://tempuri.org/IService1/S_dto_autorResponse")]
+    ClassLibrary1.AUTOR S_dto_autor(WcfService2.AUTORDTO a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_autor", ReplyAction = "http://tempuri.org/IService1/S_dto_autorResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.AUTOR> S_dto_autorAsync(WcfService2.AUTORDTO a);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_carte", ReplyAction = "http://tempuri.org/IService1/S_dto_carteResponse")]
+    ClassLibrary1.CARTE S_dto_carte(WcfService2.CARTEDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_carte", ReplyAction = "http://tempuri.org/IService1/S_dto_carteResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.CARTE> S_dto_carteAsync(WcfService2.CARTEDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_cititor", ReplyAction = "http://tempuri.org/IService1/S_dto_cititorResponse")]
+    ClassLibrary1.CITITOR S_dto_cititor(WcfService2.CITITORDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_cititor", ReplyAction = "http://tempuri.org/IService1/S_dto_cititorResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.CITITOR> S_dto_cititorAsync(WcfService2.CITITORDTO c);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_gen", ReplyAction = "http://tempuri.org/IService1/S_dto_genResponse")]
+    ClassLibrary1.GEN S_dto_gen(WcfService2.GENDTO g);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_gen", ReplyAction = "http://tempuri.org/IService1/S_dto_genResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.GEN> S_dto_genAsync(WcfService2.GENDTO g);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_imprumut", ReplyAction = "http://tempuri.org/IService1/S_dto_imprumutResponse")]
+    ClassLibrary1.IMPRUMUT S_dto_imprumut(WcfService2.IMPRUMUTDTO i);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_imprumut", ReplyAction = "http://tempuri.org/IService1/S_dto_imprumutResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.IMPRUMUT> S_dto_imprumutAsync(WcfService2.IMPRUMUTDTO i);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_review", ReplyAction = "http://tempuri.org/IService1/S_dto_reviewResponse")]
+    ClassLibrary1.REVIEW S_dto_review(WcfService2.REVIEWDTO r);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/IService1/S_dto_review", ReplyAction = "http://tempuri.org/IService1/S_dto_reviewResponse")]
+    System.Threading.Tasks.Task<ClassLibrary1.REVIEW> S_dto_reviewAsync(WcfService2.REVIEWDTO r);
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -859,32 +1540,22 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
         return base.Channel.GetDataAsync(value);
     }
 
-    public WcfService2.CompositeType GetDataUsingDataContract(WcfService2.CompositeType composite)
-    {
-        return base.Channel.GetDataUsingDataContract(composite);
-    }
-
-    public System.Threading.Tasks.Task<WcfService2.CompositeType> GetDataUsingDataContractAsync(WcfService2.CompositeType composite)
-    {
-        return base.Channel.GetDataUsingDataContractAsync(composite);
-    }
-
-    public ClassLibrary1.CARTE[] S_listare_carti(int genId)
+    public WcfService2.CARTEDTO[] S_listare_carti(int genId)
     {
         return base.Channel.S_listare_carti(genId);
     }
 
-    public System.Threading.Tasks.Task<ClassLibrary1.CARTE[]> S_listare_cartiAsync(int genId)
+    public System.Threading.Tasks.Task<WcfService2.CARTEDTO[]> S_listare_cartiAsync(int genId)
     {
         return base.Channel.S_listare_cartiAsync(genId);
     }
 
-    public void S_achizitie_carte(ClassLibrary1.CARTE c, int nrExemplare)
+    public void S_achizitie_carte(WcfService2.CARTEDTO c, int nrExemplare)
     {
         base.Channel.S_achizitie_carte(c, nrExemplare);
     }
 
-    public System.Threading.Tasks.Task S_achizitie_carteAsync(ClassLibrary1.CARTE c, int nrExemplare)
+    public System.Threading.Tasks.Task S_achizitie_carteAsync(WcfService2.CARTEDTO c, int nrExemplare)
     {
         return base.Channel.S_achizitie_carteAsync(c, nrExemplare);
     }
@@ -899,12 +1570,12 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
         return base.Channel.S_get_genIdAsync(gen);
     }
 
-    public ClassLibrary1.AUTOR S_get_autor(int AutorId)
+    public WcfService2.AUTORDTO S_get_autor(int AutorId)
     {
         return base.Channel.S_get_autor(AutorId);
     }
 
-    public System.Threading.Tasks.Task<ClassLibrary1.AUTOR> S_get_autorAsync(int AutorId)
+    public System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_get_autorAsync(int AutorId)
     {
         return base.Channel.S_get_autorAsync(AutorId);
     }
@@ -929,14 +1600,54 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
         return base.Channel.S_get_stareAsync(cititorId);
     }
 
-    public void S_adauga_cititor(ClassLibrary1.CITITOR c)
+    public void S_adauga_cititor(WcfService2.CITITORDTO c)
     {
         base.Channel.S_adauga_cititor(c);
     }
 
-    public System.Threading.Tasks.Task S_adauga_cititorAsync(ClassLibrary1.CITITOR c)
+    public System.Threading.Tasks.Task S_adauga_cititorAsync(WcfService2.CITITORDTO c)
     {
         return base.Channel.S_adauga_cititorAsync(c);
+    }
+
+    public void S_adauga_review(WcfService2.REVIEWDTO r)
+    {
+        base.Channel.S_adauga_review(r);
+    }
+
+    public System.Threading.Tasks.Task S_adauga_reviewAsync(WcfService2.REVIEWDTO r)
+    {
+        return base.Channel.S_adauga_reviewAsync(r);
+    }
+
+    public void S_adauga_autor(WcfService2.AUTORDTO a)
+    {
+        base.Channel.S_adauga_autor(a);
+    }
+
+    public System.Threading.Tasks.Task S_adauga_autorAsync(WcfService2.AUTORDTO a)
+    {
+        return base.Channel.S_adauga_autorAsync(a);
+    }
+
+    public void S_adauga_carte(WcfService2.CARTEDTO c)
+    {
+        base.Channel.S_adauga_carte(c);
+    }
+
+    public System.Threading.Tasks.Task S_adauga_carteAsync(WcfService2.CARTEDTO c)
+    {
+        return base.Channel.S_adauga_carteAsync(c);
+    }
+
+    public void S_aduga_gen(WcfService2.GENDTO g)
+    {
+        base.Channel.S_aduga_gen(g);
+    }
+
+    public System.Threading.Tasks.Task S_aduga_genAsync(WcfService2.GENDTO g)
+    {
+        return base.Channel.S_aduga_genAsync(g);
     }
 
     public void S_imprumuta_carte(int carteId, int cititorId)
@@ -959,14 +1670,24 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
         return base.Channel.S_restituie_carteAsync(imprumutId);
     }
 
-    public void S_adauga_review(ClassLibrary1.REVIEW r)
+    public WcfService2.AUTORDTO S_get_autor_by_name(string name)
     {
-        base.Channel.S_adauga_review(r);
+        return base.Channel.S_get_autor_by_name(name);
     }
 
-    public System.Threading.Tasks.Task S_adauga_reviewAsync(ClassLibrary1.REVIEW r)
+    public System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_get_autor_by_nameAsync(string name)
     {
-        return base.Channel.S_adauga_reviewAsync(r);
+        return base.Channel.S_get_autor_by_nameAsync(name);
+    }
+
+    public WcfService2.GENDTO S_get_gen_by_name(string name)
+    {
+        return base.Channel.S_get_gen_by_name(name);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.GENDTO> S_get_gen_by_nameAsync(string name)
+    {
+        return base.Channel.S_get_gen_by_nameAsync(name);
     }
 
     public int S_verifica_carte(string nume_autor, string prenume_autor, string titlu_carte)
@@ -989,22 +1710,22 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
         return base.Channel.S_verifica_dataAsync(nume_autor, prenume_autor, titlu_carte);
     }
 
-    public ClassLibrary1.IMPRUMUT[] S_get_imprumuturi(int cititorId)
+    public WcfService2.IMPRUMUTDTO[] S_get_imprumuturi(int cititorId)
     {
         return base.Channel.S_get_imprumuturi(cititorId);
     }
 
-    public System.Threading.Tasks.Task<ClassLibrary1.IMPRUMUT[]> S_get_imprumuturiAsync(int cititorId)
+    public System.Threading.Tasks.Task<WcfService2.IMPRUMUTDTO[]> S_get_imprumuturiAsync(int cititorId)
     {
         return base.Channel.S_get_imprumuturiAsync(cititorId);
     }
 
-    public ClassLibrary1.CARTE S_get_carte(int CarteId)
+    public WcfService2.CARTEDTO S_get_carte(int CarteId)
     {
         return base.Channel.S_get_carte(CarteId);
     }
 
-    public System.Threading.Tasks.Task<ClassLibrary1.CARTE> S_get_carteAsync(int CarteId)
+    public System.Threading.Tasks.Task<WcfService2.CARTEDTO> S_get_carteAsync(int CarteId)
     {
         return base.Channel.S_get_carteAsync(CarteId);
     }
@@ -1017,5 +1738,125 @@ public partial class Service1Client : System.ServiceModel.ClientBase<IService1>,
     public System.Threading.Tasks.Task<int> S_get_nrCititoriAsync()
     {
         return base.Channel.S_get_nrCititoriAsync();
+    }
+
+    public WcfService2.GENDTO S_gen_dto(ClassLibrary1.GEN g)
+    {
+        return base.Channel.S_gen_dto(g);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.GENDTO> S_gen_dtoAsync(ClassLibrary1.GEN g)
+    {
+        return base.Channel.S_gen_dtoAsync(g);
+    }
+
+    public WcfService2.CARTEDTO S_carte_dto(ClassLibrary1.CARTE c)
+    {
+        return base.Channel.S_carte_dto(c);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.CARTEDTO> S_carte_dtoAsync(ClassLibrary1.CARTE c)
+    {
+        return base.Channel.S_carte_dtoAsync(c);
+    }
+
+    public WcfService2.AUTORDTO S_autor_dto(ClassLibrary1.AUTOR a)
+    {
+        return base.Channel.S_autor_dto(a);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.AUTORDTO> S_autor_dtoAsync(ClassLibrary1.AUTOR a)
+    {
+        return base.Channel.S_autor_dtoAsync(a);
+    }
+
+    public WcfService2.CITITORDTO S_cititor_dto(ClassLibrary1.CITITOR c)
+    {
+        return base.Channel.S_cititor_dto(c);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.CITITORDTO> S_cititor_dtoAsync(ClassLibrary1.CITITOR c)
+    {
+        return base.Channel.S_cititor_dtoAsync(c);
+    }
+
+    public WcfService2.IMPRUMUTDTO S_imprumut_dto(ClassLibrary1.IMPRUMUT i)
+    {
+        return base.Channel.S_imprumut_dto(i);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.IMPRUMUTDTO> S_imprumut_dtoAsync(ClassLibrary1.IMPRUMUT i)
+    {
+        return base.Channel.S_imprumut_dtoAsync(i);
+    }
+
+    public WcfService2.REVIEWDTO S_review_dto(ClassLibrary1.REVIEW r)
+    {
+        return base.Channel.S_review_dto(r);
+    }
+
+    public System.Threading.Tasks.Task<WcfService2.REVIEWDTO> S_review_dtoAsync(ClassLibrary1.REVIEW r)
+    {
+        return base.Channel.S_review_dtoAsync(r);
+    }
+
+    public ClassLibrary1.AUTOR S_dto_autor(WcfService2.AUTORDTO a)
+    {
+        return base.Channel.S_dto_autor(a);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.AUTOR> S_dto_autorAsync(WcfService2.AUTORDTO a)
+    {
+        return base.Channel.S_dto_autorAsync(a);
+    }
+
+    public ClassLibrary1.CARTE S_dto_carte(WcfService2.CARTEDTO c)
+    {
+        return base.Channel.S_dto_carte(c);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.CARTE> S_dto_carteAsync(WcfService2.CARTEDTO c)
+    {
+        return base.Channel.S_dto_carteAsync(c);
+    }
+
+    public ClassLibrary1.CITITOR S_dto_cititor(WcfService2.CITITORDTO c)
+    {
+        return base.Channel.S_dto_cititor(c);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.CITITOR> S_dto_cititorAsync(WcfService2.CITITORDTO c)
+    {
+        return base.Channel.S_dto_cititorAsync(c);
+    }
+
+    public ClassLibrary1.GEN S_dto_gen(WcfService2.GENDTO g)
+    {
+        return base.Channel.S_dto_gen(g);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.GEN> S_dto_genAsync(WcfService2.GENDTO g)
+    {
+        return base.Channel.S_dto_genAsync(g);
+    }
+
+    public ClassLibrary1.IMPRUMUT S_dto_imprumut(WcfService2.IMPRUMUTDTO i)
+    {
+        return base.Channel.S_dto_imprumut(i);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.IMPRUMUT> S_dto_imprumutAsync(WcfService2.IMPRUMUTDTO i)
+    {
+        return base.Channel.S_dto_imprumutAsync(i);
+    }
+
+    public ClassLibrary1.REVIEW S_dto_review(WcfService2.REVIEWDTO r)
+    {
+        return base.Channel.S_dto_review(r);
+    }
+
+    public System.Threading.Tasks.Task<ClassLibrary1.REVIEW> S_dto_reviewAsync(WcfService2.REVIEWDTO r)
+    {
+        return base.Channel.S_dto_reviewAsync(r);
     }
 }

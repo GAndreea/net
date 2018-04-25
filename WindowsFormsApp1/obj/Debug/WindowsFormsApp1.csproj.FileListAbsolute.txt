@@ -41,3 +41,6 @@ C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\bin\Debug\WcfService2.dll
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\bin\Debug\WcfService2.pdb
+C:\Program Files (x86)\LSoft Technologies\Active@ UNDELETE Enterprise\recovered\Users\ANDREEA\Source\repos\ClassLibrary1\WindowsFormsApp1\bin\Debug\WcfService2.dll.config

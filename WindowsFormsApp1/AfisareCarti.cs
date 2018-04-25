@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using WcfService2;
+
 namespace WindowsFormsApp1
 {
     public partial class AfisareCarti : Form
@@ -26,8 +28,9 @@ namespace WindowsFormsApp1
 
         private void afis_Click(object sender, EventArgs e)
         {
+            Service1Client service1Client = new Service1Client();
             var gen_carte = gen.Text;
-            int id_gen = ClassLibrary1.Program.get_genId(gen_carte);
+            int id_gen = service1Client.S_get_genId(gen_carte);
             if (id_gen == -1)
             {
                 carti.Visible = false;
@@ -45,7 +48,7 @@ namespace WindowsFormsApp1
                     carti.Items.Remove(item);
                 foreach (ColumnHeader c in carti.Columns)
                     carti.Columns.Remove(c);
-                var carti2 = ClassLibrary1.Program.listare_carti(id_gen);
+                var carti2 = service1Client.S_listare_carti(id_gen);
                 carti.Columns.Add("Titlu");
                 carti.Columns.Add("Autor nume");
                 carti.Columns.Add("Autor prenume");
@@ -56,7 +59,7 @@ namespace WindowsFormsApp1
                     string[] arr = new string[3];
                     ListViewItem itm; 
                     arr[0] = c.Titlu;
-                    var a = ClassLibrary1.Program.get_autor((int)c.AutorId);
+                    var a = service1Client.S_get_autor((int)c.AutorId);
                     arr[1] = a.Nume;
                     arr[2] = a.Prenume;
                     itm = new ListViewItem(arr);
@@ -74,18 +77,19 @@ namespace WindowsFormsApp1
         private void imprumuta_Click(object sender, EventArgs e)
         {
             rezultat.Visible = true;
+            Service1Client service1Client = new Service1Client();
             var titlu_carte = titlu.Text;
             var autor_nume = numeAutor.Text;
             var autor_prenume = prenumeAutor.Text;
             var cititor_id = Int32.Parse(cititorId.Text);
-            var carte_id = ClassLibrary1.Program.verifica_carte(autor_nume, autor_prenume, titlu_carte);
+            var carte_id = service1Client.S_verifica_carte(autor_nume, autor_prenume, titlu_carte);
             if (carte_id==-1)
             {
-                DateTime data = ClassLibrary1.Program.verifica_data(autor_nume, autor_prenume, titlu_carte);
+                DateTime data = service1Client.S_verifica_data(autor_nume, autor_prenume, titlu_carte);
                 rezultat.Text = "Cartea nu este dispoinibla pana la: " + data.ToString();
             } else
             {
-                ClassLibrary1.Program.imprumuta_carte(carte_id, cititor_id);
+                service1Client.S_imprumuta_carte(carte_id, cititor_id);
                 rezultat.Text = "Carte imprumutata cu succes";
             }
 

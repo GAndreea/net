@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WcfService2;
 
 namespace WindowsFormsApp1
 {
@@ -25,47 +26,43 @@ namespace WindowsFormsApp1
             var gen_carte = gen.Text;
             var nr_exemplare = Int32.Parse(nrExemplare.Text);
 
-            WcfService2.Service1 ser = new WcfService2.Service1();
             Service1Client service1Client = new Service1Client();
-            var carte_noua = new CARTE()
+            var carte_noua = new CARTEDTO()
             {
                 Titlu = titlu_carte
             };
+            AUTORDTO obiectAutor = service1Client.S_get_autor_by_name(nume_autor);
             if (obiectAutor == null)
             {
-               var autor1 = new AUTOR()
+               var autor1 = new AUTORDTO()
                {
                   Nume = nume_autor,
                   Prenume = prenume_autor
                };
-               ClassLibrary1.Program.adauga_autor(autor1);
-               carte_noua.AutorId = autor1.AutorId;
+               service1Client.S_adauga_autor(autor1);
                carte_noua.AUTOR = autor1;
             }
             else
             {
-               carte_noua.AutorId = obiectAutor.AutorId;
                carte_noua.AUTOR = obiectAutor;
             }
 
-            var obiectGen = ClassLibrary1.Program.get_gen_by_name(gen_carte);
+            var obiectGen = service1Client.S_get_gen_by_name(gen_carte);
             if (obiectGen == null)
             {
-                var gen1 = new GEN()
+                var gen1 = new GENDTO()
                 {
                     Descriere = gen_carte
                 };
-                ClassLibrary1.Program.adauga_gen(gen1);
-                carte_noua.GenId = gen1.GenId;
+                service1Client.S_aduga_gen(gen1);
                 carte_noua.GEN = gen1;
             }
             else
             {
-                carte_noua.GenId = obiectGen.GenId;
                 carte_noua.GEN = obiectGen;
             }
 
-            ClassLibrary1.Program.achizitie_carte(carte_noua, nr_exemplare);
+            service1Client.S_achizitie_carte(carte_noua, nr_exemplare);
         }
 
 

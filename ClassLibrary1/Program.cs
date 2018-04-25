@@ -44,8 +44,12 @@ namespace ClassLibrary1
 
         public static AUTOR get_autor_by_name(string name)
         {
-            AUTOR obiectAutor = context2.AUTOR.FirstOrDefault(a => a.Nume == name);
-            return obiectAutor;
+            using (BTESTEntities1 context = new BTESTEntities1())
+            {
+                AUTOR obiectAutor = context.AUTOR.FirstOrDefault(a => a.Nume == name);
+                return obiectAutor;
+            }
+          
         }
 
         public static GEN get_gen_by_name(string name)

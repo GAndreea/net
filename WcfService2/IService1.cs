@@ -28,7 +28,7 @@ namespace WcfService2
         int S_get_genId(string gen);
 
         [OperationContract]
-        AUTOR S_get_autor(int AutorId);
+        AUTORDTO S_get_autor(int AutorId);
 
         [OperationContract]
         int S_verifica_cititor(string email);
@@ -40,13 +40,31 @@ namespace WcfService2
         void S_adauga_cititor(CITITORDTO c);
 
         [OperationContract]
+        void S_adauga_review(REVIEWDTO r);
+
+        [OperationContract]
+        void S_adauga_autor(AUTORDTO a);
+
+        [OperationContract]
+        void S_adauga_carte(CARTEDTO c);
+
+        [OperationContract]
+        void S_aduga_gen(GENDTO g);
+
+
+        [OperationContract]
         void S_imprumuta_carte(int carteId, int cititorId);
 
         [OperationContract]
         void S_restituie_carte(int imprumutId);
 
+
+
         [OperationContract]
-        void S_adauga_review(REVIEWDTO r);
+        AUTORDTO S_get_autor_by_name(string name);
+
+        [OperationContract]
+        GENDTO S_get_gen_by_name(string name);
 
         [OperationContract]
         int S_verifica_carte(string nume_autor = "", string prenume_autor = "", string titlu_carte = "");
@@ -67,10 +85,37 @@ namespace WcfService2
         GENDTO S_gen_dto(GEN g);
 
         [OperationContract]
-        CARTEDTO carte_dto(CARTE c);
+        CARTEDTO S_carte_dto(CARTE c);
 
         [OperationContract]
-        AUTORDTO autor_dto
+        AUTORDTO S_autor_dto(AUTOR a);
+
+        [OperationContract]
+        CITITORDTO S_cititor_dto(CITITOR c);
+
+        [OperationContract]
+        IMPRUMUTDTO S_imprumut_dto(IMPRUMUT i);
+
+        [OperationContract]
+        REVIEWDTO S_review_dto(REVIEW r);
+
+        [OperationContract]
+        AUTOR S_dto_autor(AUTORDTO a);
+
+        [OperationContract]
+        CARTE S_dto_carte(CARTEDTO c);
+
+        [OperationContract]
+        CITITOR S_dto_cititor(CITITORDTO c);
+
+        [OperationContract]
+        GEN S_dto_gen(GENDTO g);
+
+        [OperationContract]
+        IMPRUMUT S_dto_imprumut(IMPRUMUTDTO i);
+
+        [OperationContract]
+        REVIEW S_dto_review(REVIEWDTO r);
         
     }
 
@@ -83,6 +128,8 @@ namespace WcfService2
             this.CARTE = new HashSet<CARTEDTO>();
         }
 
+        [DataMember]
+        public int AutorId { get; set; }
        
         [DataMember]
         public string Nume { get; set; }
@@ -102,7 +149,15 @@ namespace WcfService2
             this.IMPRUMUT = new HashSet<IMPRUMUTDTO>();
         }
 
-       
+        [DataMember]
+        public int CarteId { get; set; }
+
+        [DataMember]
+        public Nullable<int> AutorId { get; set; }
+
+        [DataMember]
+        public Nullable<int> GenId { get; set; }
+
         [DataMember]
         public string Titlu { get; set; }
      
@@ -122,7 +177,9 @@ namespace WcfService2
             this.IMPRUMUT = new HashSet<IMPRUMUTDTO>();
         }
 
-        
+        [DataMember]
+        public int CititorId { get; set; }
+
         [DataMember]
         public string Nume { get; set; }
         [DataMember]
@@ -146,7 +203,9 @@ namespace WcfService2
             this.CARTE = new HashSet<CARTEDTO>();
         }
 
-       
+        [DataMember]
+        public int GenId { get; set; }
+
         [DataMember]
         public string Descriere { get; set; }
         [DataMember]
@@ -162,7 +221,12 @@ namespace WcfService2
             this.REVIEW = new HashSet<REVIEWDTO>();
         }
 
-        
+        [DataMember]
+        public int ImprumutId { get; set; }
+        [DataMember]
+        public Nullable<int> CarteId { get; set; }
+        [DataMember]
+        public Nullable<int> CititorId { get; set; }
         [DataMember]
         public Nullable<System.DateTime> DataImprumut { get; set; }
         [DataMember]
@@ -181,7 +245,10 @@ namespace WcfService2
     [DataContract]
     public  partial class REVIEWDTO
     {
-       
+        [DataMember]
+        public int ReviewId { get; set; }
+        [DataMember]
+        public Nullable<int> ImprumutId { get; set; }
         [DataMember]
         public string Text { get; set; }
 

@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClassLibrary1;
-
+using WcfService2;
 namespace WindowsFormsApp1
 {
     public partial class Statistici : Form
@@ -16,6 +15,8 @@ namespace WindowsFormsApp1
         public Statistici()
         {
             InitializeComponent();
+            Service1Client service1Client = new Service1Client();
+
             cititori.Text = ClassLibrary1.Program.get_nrCititori().ToString();
 
             var carti = ClassLibrary1.Program.clasament_carti();
